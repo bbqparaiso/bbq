@@ -1,1 +1,26 @@
 /* Css for Contacts component */
+.Contacts {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* font-size: calc(10px + 2vmin); */
+    color: white;
+  }
+
+  .ErrorMessage {
+    color: red;
+    font-size: calc(1vmin);
+  }
+
+  .header{
+    display:inline-block;
+    margin-right:10vmin;
+  }
+
+  .search{
+    display:inline-block;
+    margin-left:4vmin;
+  }

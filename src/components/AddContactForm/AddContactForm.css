@@ -1,0 +1,58 @@
+.input__name {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: #6A515E;
+}
+
+.input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    margin: 0.5em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 300ms ease-in-out;
+}
+
+.input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+        -13px -13px 100px #ffffff;
+}
+
+.save-text {
+    color: #c1ccda;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: right;
+    text-transform: uppercase;
+    float: right;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.wrapper {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.card .card__overlay .container .input:focus {
+    box-shadow: 3px 3px 5px #969696,
+        -13px -13px 100px #ffffff;
+}
+
+.card .card__overlay .container .save {
+    float: right;
+    padding: 1em;
+}
+
+.card__image.form{
+    width: 100%;
+    max-width:600px;
+}
