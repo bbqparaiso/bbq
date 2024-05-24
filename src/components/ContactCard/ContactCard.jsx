@@ -2,7 +2,7 @@ import './ContactCard.css'
 import DeleteIcon from '@mui/icons-material/Delete';
 import BorderColorIcon from '@mui/icons-material/BorderColor';
 
-const ContactCard = ({ name, surName, phone, description, id, image, deleteContact }) => {
+const ContactCard = ({ name, surName, confirmed, description, id, image, deleteContact, paid, food, plusOne }) => {
     return (
         <li>
             <a class="card">
@@ -13,11 +13,16 @@ const ContactCard = ({ name, surName, phone, description, id, image, deleteConta
                         <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
                         <div class="card__header-text">
                             <h3 class="card__title">{name} {surName}</h3>
-                            <span class="card__status">{phone}</span>
+                            <span class="card__status">{confirmed ? 'confirmado' : 'No confirmado'}</span>
                         </div>
                     </div>
                     <p class="card__description">{description}</p>
                     <div class="container">
+                        {
+                            paid ?
+                        <span class="card__status">Pagado</span> :
+                        <span class="card__status">No pagado</span>
+                        }
                         <button className="edit">
                             <BorderColorIcon sx={{ color: '#282c34' }} />
                         </button>

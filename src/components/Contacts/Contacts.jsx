@@ -14,7 +14,7 @@ const Contacts = () => {
     useEffect(() => {
         const getContacts = async () => {
             console.log('Fetch contacts')
-            const data = await fetch('https://mocki.io/v1/ab9703cc-f1e9-4eb8-9af0-21352c53ea74')
+            const data = await fetch('https://b91f239b-6e36-4e43-bdca-df83082e52e2.mock.pstmn.io/contacts/list')
             const response = await data.json()
 
             const newContacts = response
@@ -59,7 +59,7 @@ const Contacts = () => {
         setShownContacts(!filterExp ? contacts :
             contacts.filter(contact => contact.name.toLowerCase().includes(filterExp.toLowerCase())
                 || contact.surName.toLowerCase().includes(filterExp.toLowerCase())
-                || contact.phone.includes(filterExp)))
+                ))
     }
 
     // const addContact = () => {

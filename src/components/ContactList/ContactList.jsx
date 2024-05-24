@@ -10,7 +10,10 @@ const ContactList = ({ contacts, deleteContact }) => {
                     key={contact.id}
                     name={contact.name}
                     surName={contact.surName}
-                    phone={contact.phone}
+                    confirmed={contact.confirmed}
+                    paid={contact.paid}
+                    food={contact.food}
+                    plusOne={contact.plusOne}
                     description={contact.description}
                     image={contact.image}
                     deleteContact={deleteContact}

@@ -1,0 +1,372 @@
+[
+    {
+        "id": "lucas",
+        "name": "Lucas",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": false,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "mirko",
+        "name": "Mirko",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "darío",
+        "name": "Darío",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": true,
+        "image":""
+    },
+    {
+        "id": "gelu",
+        "name": "Gelu",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "antonio",
+        "name": "Antonio",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "natalia",
+        "name": "Natalia",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "paloma",
+        "name": "Paloma",
+        "surName": "",
+        "confirmed": false,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "xiluba",
+        "name": "Xiluba",
+        "surName": "",
+        "confirmed": false,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "loza",
+        "name": "Loza",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "lalo",
+        "name": "Lalo",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "pablo",
+        "name": "Pablo",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "víctor",
+        "name": "Víctor",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "jani1",
+        "name": "Jani+1",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "taju",
+        "name": "Taju",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "johnny",
+        "name": "Johnny",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "julia",
+        "name": "Julia",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "valeria",
+        "name": "Valeria",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "ceci",
+        "name": "Ceci",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "golo",
+        "name": "Golo",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "irimia",
+        "name": "Irimia",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "peña",
+        "name": "Peña",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "andrés",
+        "name": "Andrés",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "cepeda❔",
+        "name": "Cepeda❔",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "sazza",
+        "name": "Sazza",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "nil",
+        "name": "Nil",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "luisfro",
+        "name": "Luisfro",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "alba",
+        "name": "Alba",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "polo",
+        "name": "polo",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "j-cruz",
+        "name": "J-Cruz",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "ricky",
+        "name": "Ricky",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "dani",
+        "name": "Dani",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "alberto/Torres",
+        "name": "Alberto",
+        "surName": "Torres",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "zack❔",
+        "name": "Zack❔",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "alberto",
+        "name": "alberto",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "laura",
+        "name": "Laura",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "angy",
+        "name": "Angy",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": false,
+        "plusOne": false,
+        "image":""
+    },
+    {
+        "id": "andrea",
+        "name": "Andrea",
+        "surName": "",
+        "confirmed": true,
+        "paid": true,
+        "food": true,
+        "plusOne": false,
+        "image":""
+    }
+]
