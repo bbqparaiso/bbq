@@ -27,7 +27,7 @@ const ContactCard = ({ name, surName, confirmed, description, id, image, deleteC
                             <h3 class="card__title">{name} {surName}</h3>
                             <h3 class="card__title__icon"><PaidIcon sx={{ color: paid? 'green': "red" }}/></h3>
                             </div>
-                            <span class="card__status">{paid ? 'Pagado' : 'No confirmado'}</span>
+                            <span class="card__status">{paid ? 'Pagado' : 'No pagado'}</span>
                             {plusOne && <PlusOneIcon style={{"position":"absolute","right":"1em"}}/>}
                         </div>
                     </div>
@@ -36,7 +36,7 @@ const ContactCard = ({ name, surName, confirmed, description, id, image, deleteC
                         {
                             confirmed ?
                         <span class="card__status" style={{"margin-left":"1.5em"}}>Confirmado</span> :
-                        <span class="card__status">No confirmado</span>
+                        <span class="card__status" style={{"margin-left":"1.5em"}}>No confirmado</span>
                         }
                         
                         {/* <button className="edit">
