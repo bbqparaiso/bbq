@@ -10,6 +10,7 @@ const ContactCard = ({ name, surName, confirmed, description, id, image, deleteC
     // const grey = "#C0C5CF"
     const grey = "#F9F871"
     const getColor = () => {
+        if (id === 'default') return "#c1ccda";
         return confirmed ? green : grey;
     }
     const greenStyleBackground = {backgroundColor: getColor()}

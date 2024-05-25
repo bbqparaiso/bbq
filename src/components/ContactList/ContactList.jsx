@@ -6,7 +6,7 @@ const ContactList = ({ contacts, deleteContact }) => {
         <div className="ContactList">
             {/* List of contact cards */}
             <ul class="cards">
-                {contacts.map(contact => <ContactCard
+                {typeof contacts !== 'undefined' && contacts.length > 0 ? contacts.map(contact => <ContactCard
                     key={contact.id}
                     name={contact.name}
                     surName={contact.surName}
@@ -18,7 +18,20 @@ const ContactList = ({ contacts, deleteContact }) => {
                     image={contact.image}
                     deleteContact={deleteContact}
                     id={contact.id}
-                />)}
+                />) :
+                <ContactCard
+                    key={'default'}
+                    name={'Nobody :('}
+                    surName={''}
+                    confirmed={false}
+                    paid={false}
+                    food={true}
+                    plusOne={false}
+                    image={''}
+                    deleteContact={deleteContact}
+                    id={'default'}
+                />
+                }
             </ul>
         </div>
     )
