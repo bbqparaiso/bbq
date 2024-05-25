@@ -9,12 +9,15 @@
 
 body {
   font-family: 'Noto Sans JP', sans-serif;
-  background-color: #fef8f8;
+  background-color: #f9fef8;
 }
 
+.ContactList{
+  width: 80%;
+}
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 100fr));
   gap: 2rem;
   margin: 4rem 5vw;
   padding: 0;
@@ -24,6 +27,7 @@ body {
 .card {
   position: relative;
   display: block;
+  min-width: 170px;
   height: 100%;  
   border-radius: calc(var(--curve) * 1px);
   overflow: hidden;
@@ -56,7 +60,7 @@ body {
   display: flex;
   align-items: center;
   gap: 2em;
-  padding: 2em;
+  padding: 1em;
   border-radius: calc(var(--curve) * 1px) 0 0 0;    
   background-color: var(--surface-color);
   transform: translateY(-100%);
@@ -89,9 +93,20 @@ body {
 }
 
 .card__title {
+  display:inline-block;
   font-size: 1em;
   margin: 0 0 .3em;
-  color: #6A515E;
+  margin-left: em;
+  color: #282C34;
+}
+
+.card__title__icon {
+  position: absolute;
+  top: 10px;
+  padding-left: 0.4em;
+  display:inline-block;
+  font-size: 1em;
+  margin: 0 0 .3em;
 }
 
 .card__tagline {
@@ -103,8 +118,9 @@ body {
 }
 
 .card__status {
+  /* display:inline-block; */
   font-size: .8em;
-  color: #D7BDCA;
+  color: #285467;
 }
 
 .card__description {

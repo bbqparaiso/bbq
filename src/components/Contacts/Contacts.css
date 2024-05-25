@@ -1,5 +1,6 @@
 /* Css for Contacts component */
 .Contacts {
+    z-index: 999; 
     background-color: #282c34;
     min-height: 100vh;
     display: flex;
@@ -8,6 +9,7 @@
     justify-content: center;
     /* font-size: calc(10px + 2vmin); */
     color: white;
+    padding-top: 5vmin;
   }
 
   .ErrorMessage {
@@ -21,6 +23,10 @@
   }
 
   .search{
-    display:inline-block;
-    margin-left:4vmin;
+    /* display:inline-block; */
+    margin-right:3vmin;
   }
+
+
+  /*  */
+  

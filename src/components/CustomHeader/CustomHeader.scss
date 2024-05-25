@@ -1,0 +1,94 @@
+@font-face {
+    font-family: Moderne Sans;
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/moderne_sans.woff2)
+}
+
+.customHeader * {
+    box-sizing: border-box;
+}
+
+.customHeader body {
+    margin: 0;
+    background: #000;
+    background-size: cover;
+}
+
+.customHeader video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.customHeader div#fashion {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customHeader header {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: white;
+    transition: .4s;
+}
+
+.customHeader .title {
+    right: 0px;
+    text-align: left;
+
+}
+
+.customHeader header:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+.customHeader h1 {
+    font-family: Moderne Sans, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    letter-spacing: .5rem;
+}
+
+.customHeader nav a {
+    text-decoration: none;
+    color: inherit;
+    padding: 1rem;
+}
+
+.customHeader h2 {
+    font-family: Century Schoolbook, Century Schoolbook L, Georgia, serif;
+    font-size: 8vmin;
+    line-height: normal;
+    text-align: center;
+    margin: 2rem 3rem 0;
+    mix-blend-mode: overlay;
+    color: #fff;
+    font-weight: 100;
+}
+
+.customHeader {
+    // border: 1px #282c34 dashed;
+    font: 2em/1.6em Arial;
+    position: relative;
+    
+}
+
+.customHeader:after  {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(40,44,52,0), rgba(40, 44, 52, 1) 90%);
+    width: 100%;
+    height: 4em;
+}

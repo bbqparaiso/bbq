@@ -57,8 +57,8 @@ const Contacts = () => {
         console.log(filterExp)
         console.log(contacts)
         setShownContacts(!filterExp ? contacts :
-            contacts.filter(contact => contact.name.toLowerCase().includes(filterExp.toLowerCase())
-                || contact.surName.toLowerCase().includes(filterExp.toLowerCase())
+            contacts.filter(contact => contact.name.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().includes(filterExp.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase())
+                || contact.surName.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().includes(filterExp.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase())
                 ))
     }
 
@@ -94,13 +94,11 @@ const Contacts = () => {
                 {!validateInput() && <p className="ErrorMessage">El contacto debe tener menos de 10 caracteres</p>}
             </div> */}
             {/* {contacts.map(el => <p>{el}</p>)} */}
-
-            <div className="Contacts-header">
-                <h1 class="header"> My Contacts</h1>
-                <div class="search">
-                    <SearchBar filterContacts={filterContacts} setCurrentFilter={setCurrentFilter} />
-                </div>
+        
+            <div class="search">
+                <SearchBar filterContacts={filterContacts} setCurrentFilter={setCurrentFilter} />
             </div>
+            
             <ContactList contacts={shownContacts} deleteContact={deleteContact} />
             <AddContact addContactF={addContact} />
 

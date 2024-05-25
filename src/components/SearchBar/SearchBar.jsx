@@ -31,6 +31,7 @@ const SearchBar = ({ filterContacts, setCurrentFilter }) => {
     };
 
     return (
+        
         <form class="searchBar">
             <label for="search">Search</label>
             <input id="search" type="text" pattern=".*\S.*" onChange={handleOnChange} value={value} required />
