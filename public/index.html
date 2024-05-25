@@ -3,7 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=700, initial-scale=1" />
+    <meta name="viewport" content="width=700, user-scalable=no" />
+        <!-- <meta name="viewport" content="width=780" /> -->
+        <script>
+          // var viewportElement= document.querySelector("meta[name=viewport]"); var ratio = window.innerWidth/600; viewportElement.setAttribute( 'content', 'initial-scale=' + ratio );
+          var ratio = window.outerWidth/700
+          viewportElement.setAttribute( 'content', 'initial-scale=' + ratio );
+        </script>
+        <!-- viewportElement.setAttribute( 'content', 'initial-scale=' + ratio ); -->
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"

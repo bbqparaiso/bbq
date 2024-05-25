@@ -27,7 +27,7 @@ const ContactCard = ({ name, surName, confirmed, description, id, image, deleteC
                             <h3 class="card__title">{name} {surName}</h3>
                             <h3 class="card__title__icon"><PaidIcon sx={{ color: paid? 'green': "red" }}/></h3>
                             </div>
-                            <span class="card__status">{paid ? 'Pagado' : 'No pagado'}</span>
+                            <span class="card__status">{paid ? 'Pagado' : 'No pagado'}{!food && ' - No comida'}</span>
                             {plusOne && <PlusOneIcon style={{"position":"absolute","right":"1em"}}/>}
                         </div>
                     </div>

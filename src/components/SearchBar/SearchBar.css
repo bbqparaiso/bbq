@@ -5,6 +5,7 @@
 	padding: 0;
 }
 .searchBar {
+	display:inline-block;
 	--bg: #e3e4e8;
 	--fg: #c1ccda;
 	--input: #ffffff;

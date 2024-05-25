@@ -2,7 +2,9 @@ import AddContact from '../AddContact/AddContact'
 import ContactList from '../ContactList/ContactList'
 import SearchBar from '../SearchBar/SearchBar'
 import './Contacts.css'
+import RefreshIcon from '@mui/icons-material/Refresh';
 import { useState, useEffect } from 'react'
+import IconButton from '@mui/material/IconButton';
 
 
 
@@ -10,18 +12,31 @@ import { useState, useEffect } from 'react'
 const Contacts = () => {
 
     const [contacts, setContacts] = useState([])
+    const getContacts = async () => {
+        console.log('Fetch contacts')
+        
+        const repo = await fetch('https://api.github.com/repos/alvaroirimia/bbq-data/branches/main')
+        const resp = await repo.json();
+        const commit = resp.commit.sha;
+
+        console.log(commit)
+        // const data = await fetch('https://raw.githubusercontent.com/alvaroirimia/bbq-data/main/guests.json')
+        const data = await fetch(`https://raw.githubusercontent.com/alvaroirimia/bbq-data/${commit}/guests.json?v=1`)
+        const response = await data.json()
+        console.log('recuperados')
+        console.log(response)
+
+        const newContacts = response
+
+        setContacts(newContacts)
+    }
+
+    // const refresh = async () => {
+    //     await getContacts();
+    //     filterContacts(currentFilter);
+    // }
 
     useEffect(() => {
-        const getContacts = async () => {
-            console.log('Fetch contacts')
-            const data = await fetch('https://raw.githubusercontent.com/alvaroirimia/bbq-data/main/guests.json')
-            const response = await data.json()
-
-            const newContacts = response
-
-            setContacts(newContacts)
-        }
-
         getContacts()
     }, [])
 
@@ -97,6 +112,9 @@ const Contacts = () => {
         
             <div class="search">
                 <SearchBar filterContacts={filterContacts} setCurrentFilter={setCurrentFilter} />
+                <IconButton aria-label="refresh" sx={{ marginLeft: '1em', position: 'relative', top: '.1em'}} onClick={getContacts}>
+                    <RefreshIcon fontSize="large" sx={{ color: '#c1ccda'}} />
+                </IconButton>
             </div>
             
             <ContactList contacts={shownContacts} deleteContact={deleteContact} />
