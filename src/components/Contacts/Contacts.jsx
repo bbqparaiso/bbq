@@ -13,6 +13,8 @@ const Contacts = () => {
 
     const [contacts, setContacts] = useState([])
     const getContacts = async () => {
+        setPressed(true)
+        const timeoutId = setTimeout(() => setPressed(false), 2000);
         console.log('Fetch contacts')
         
         const repo = await fetch('https://api.github.com/repos/alvaroirimia/bbq-data/branches/main')
@@ -30,6 +32,10 @@ const Contacts = () => {
 
         setContacts(newContacts)
     }
+
+    const [pressed, setPressed] = useState(false);
+
+
 
     // const refresh = async () => {
     //     await getContacts();
@@ -77,43 +83,14 @@ const Contacts = () => {
                 ))
     }
 
-    // const addContact = () => {
-    //     if (validateInput()) {
-    //         setContacts([...contacts, contactInput])
-    //     } else {
-    //         alert('El contacto debe tener menos de 10 caracteres')
-    //     }
-    // }
-
-    // const getInputStyle = () => {
-    //     return validateInput() ? { border: '1px solid black' } : { border: '3px solid red' }
-    // }
-
-    // const validateInput = () => {
-    //     return contactInput.length < 10
-    // }
 
     return (
         <div className="Contacts">
-            {/* <div>
-                <p>Contacto nuevo:</p>
-                <input
-                    type="text"
-                    placeholder="Type your name..."
-                    style={getInputStyle()}
-                    onChange={e => setContactInput(e.target.value)} />
-                <button
-                    onClick={addContact}
-                    disabled={!validateInput()}
-                >Add contact</button>
-                {!validateInput() && <p className="ErrorMessage">El contacto debe tener menos de 10 caracteres</p>}
-            </div> */}
-            {/* {contacts.map(el => <p>{el}</p>)} */}
         
             <div class="search">
                 <SearchBar filterContacts={filterContacts} setCurrentFilter={setCurrentFilter} />
-                <IconButton aria-label="refresh" sx={{ marginLeft: '1em', position: 'relative', top: '.1em'}} onClick={getContacts}>
-                    <RefreshIcon fontSize="large" sx={{ color: '#c1ccda'}} />
+                <IconButton aria-label="refresh" sx={{ marginLeft: '1em', position: 'relative', top: '.1em',color: pressed ? '#3f4552': '#c1ccda'}} onClick={getContacts}>
+                    <RefreshIcon fontSize="large" />
                 </IconButton>
             </div>
             
