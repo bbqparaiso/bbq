@@ -2,7 +2,7 @@ import './App.css';
 import Contacts from './components/Contacts/Contacts';
 import CustomHeader from './components/CustomHeader/CustomHeader'
 import Merch from './components/Merch/Merch';
-import { Routes, Route } from 'react-router'
+import { Routes, Route, Navigate } from 'react-router'
 
 function App() {
   return (
@@ -12,12 +12,13 @@ function App() {
       </header> */}
       <CustomHeader />
       <Routes>
-          <Route path="/" element={ <Contacts /> } />
-          <Route path="/bbq" element={ <Contacts /> } />
-          <Route path="/merch" element={ <Merch /> } />
-          <Route path="*" element={ <Contacts /> } />
-        </Routes>
-      
+        <Route path="/" element={<Navigate to="/bbq" replace />} />
+        <Route path="/bbq" element={<Contacts />} />
+        <Route path="/merch" element={<Merch />} />
+        <Route path="*"
+        element={<Navigate to="/bbq" replace />} />
+      </Routes>
+
       <footer class="App-footer" />
     </div>
   );

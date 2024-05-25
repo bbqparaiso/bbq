@@ -21,9 +21,9 @@ const CustomHeader = () => {
 
     const scrollToList = () => {
         if (isMobile) {
-            window.scrollTo({ top: 947, behavior: "smooth" })
+            window.scrollTo({ top: 920, behavior: "smooth" })
         } else {
-            window.scrollTo({ top: 730, behavior: "smooth" })
+            window.scrollTo({ top: 673, behavior: "smooth" })
         }
     }
 
@@ -35,8 +35,8 @@ const CustomHeader = () => {
             <header class="title">
                 <h1>PARAÍSO BBQ</h1>
                 <nav>
-                    <Link to="/merch"><a href="#">Merch</a></Link>
-                    <Link to="/"><a href="#" onClick={scrollToList}>Guest List</a></Link>
+                    <Link to="/merch"><a href="#" onClick={scrollToList}>Merch</a></Link>
+                    <Link to="/bbq"><a href="#" onClick={scrollToList}>Guest List</a></Link>
                 </nav>
             </header>
             <div id="fashion">
