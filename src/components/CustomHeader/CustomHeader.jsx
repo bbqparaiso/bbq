@@ -23,7 +23,7 @@ const CustomHeader = () => {
         if (isMobile) {
             window.scrollTo({ top: 947, behavior: "smooth" })
         } else {
-            window.scrollTo({ top: 673, behavior: "smooth" })
+            window.scrollTo({ top: 730, behavior: "smooth" })
         }
     }
 
