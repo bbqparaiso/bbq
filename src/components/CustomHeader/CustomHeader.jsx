@@ -1,6 +1,7 @@
 import './CustomHeader.scss'
 import video from './video-head-bbq.mp4'
-import {useState,useEffect,useRef} from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom'
 
 const CustomHeader = () => {
 
@@ -19,9 +20,9 @@ const CustomHeader = () => {
     const isMobile = width <= 768;
 
     const scrollToList = () => {
-        if(isMobile){
+        if (isMobile) {
             window.scrollTo({ top: 947, behavior: "smooth" })
-        }else{
+        } else {
             window.scrollTo({ top: 673, behavior: "smooth" })
         }
     }
@@ -34,8 +35,8 @@ const CustomHeader = () => {
             <header class="title">
                 <h1>PARAÍSO BBQ</h1>
                 <nav>
-                    <a href="#">Merch</a>
-                    <a href="#" onClick={scrollToList}>Guest List</a>
+                    <Link to="/merch"><a href="#">Merch</a></Link>
+                    <Link to="/"><a href="#" onClick={scrollToList}>Guest List</a></Link>
                 </nav>
             </header>
             <div id="fashion">

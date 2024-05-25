@@ -1,0 +1,21 @@
+.Merch {
+    z-index: 999; 
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* font-size: calc(10px + 2vmin); */
+    color: white;
+    padding-top: 5vmin;
+  }
+
+  .Merch h1 {
+    font-family: Moderne Sans, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    letter-spacing: .5rem;
+    padding-bottom: 5rem;
+}
