@@ -45,7 +45,8 @@
 }
 
 .customHeader header:hover {
-    background: rgba(255, 255, 255, 0.8);
+    // background: rgba(255, 255, 255, 0.8);
+    background: linear-gradient(to top, rgba(255, 255, 255,0) 15%, rgba(255, 255, 255, 0.8) 100%);
     color: #000;
 }
 
