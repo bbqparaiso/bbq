@@ -13,7 +13,7 @@ function App() {
       <CustomHeader />
       <Routes>
           <Route path="/" element={ <Contacts /> } />
-          <Route path="/contacts-app" element={ <Contacts /> } />
+          <Route path="/bbq" element={ <Contacts /> } />
           <Route path="/merch" element={ <Merch /> } />
           <Route path="*" element={ <Contacts /> } />
         </Routes>
