@@ -14,7 +14,7 @@ const Contacts = () => {
     useEffect(() => {
         const getContacts = async () => {
             console.log('Fetch contacts')
-            const data = await fetch('https://b58c0025-b815-4d09-96c1-2a6a6dadd2a5.mock.pstmn.io/contacts/list')
+            const data = await fetch('https://raw.githubusercontent.com/alvaroirimia/bbq-data/main/guests.json')
             const response = await data.json()
 
             const newContacts = response

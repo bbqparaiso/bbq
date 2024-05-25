@@ -13,7 +13,7 @@ body {
 }
 
 .ContactList{
-  width: 80%;
+  width: 90%;
 }
 .cards {
   display: grid;
@@ -74,6 +74,7 @@ body {
   bottom: 100%;
   right: 0;      
   z-index: 1;
+  margin-bottom: -1px;
 }
 
 .card__arc path {
