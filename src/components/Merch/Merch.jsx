@@ -67,7 +67,7 @@ const Merch = ({ }) => {
                             </Grid>
                             <Grid key='5' item>
                                 <RecipeReviewCard name="Surprise Concert" sub="20€"
-                                    detail="Get a ticket for a surprise concert of any of the people present at the barbecue! You can get a great concert or a not so interesting one... But the risk is the thrill. Don't let it pass you by!"
+                                    detail="Get a ticket for a surprise concert of any of the people present at the barbecue! You can get a great concert or a not so interesting one... But the risk is the thrill."
                                     moreDetail="Contact with the Paraíso BBQ Staff if you want to buy this product."
                                     image={ticket}
                                 />
