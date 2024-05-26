@@ -112,7 +112,7 @@ const Contacts = () => {
                     <IconButton aria-label="refresh" sx={{ marginLeft: '1em', position: 'relative', top: '.1em', color: pressed ? '#3f4552' : '#c1ccda' }} onClick={getContacts}>
                         <RefreshIcon fontSize="large" />
                     </IconButton>
-                    <IconButton aria-label="refresh" sx={{ marginLeft: '1em', position: 'relative', top: '.1em', color: isPaid ? '#c1ccda' : 'red' }} onClick={filterPaid}>
+                    <IconButton aria-label="refresh" sx={{ marginLeft: '.45em', position: 'relative', top: '.1em', color: isPaid ? '#c1ccda' : 'red' }} onClick={filterPaid}>
                         <CreditCardOffIcon fontSize="large" />
                     </IconButton>
                 </div>

@@ -18,7 +18,10 @@ const ContactCard = ({ name, surName, confirmed, description, id, image, deleteC
     return (
         <li>
             <a class="card">
+                <div class="img-container">
+
                 <img src={image ? image : `https://robohash.org/${id}.png`} class="card__image" alt="" />
+                </div>
                 <div class="card__overlay" style={greenStyleBackground}>
                     <div class="card__header" style={greenStyleBackground}>
                         <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path style={greenStyleFill}/></svg>

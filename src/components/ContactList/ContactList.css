@@ -22,6 +22,7 @@ body {
   margin: 4rem 5vw;
   padding: 0;
   list-style-type: none;
+  place-items: center;
 }
 
 .card {
@@ -32,11 +33,15 @@ body {
   border-radius: calc(var(--curve) * 1px);
   overflow: hidden;
   text-decoration: none;
+  max-width: 500px
 }
 
 .card__image {      
   width: 100%;
   height: auto;
+  padding-bottom: 2em;
+  /* padding-left: 1em;
+  padding-right: 1em; */
 }
 
 .card__overlay {
