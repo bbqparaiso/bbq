@@ -60,7 +60,7 @@ const Merch = ({ }) => {
                                 <RecipeReviewCard name="M. Virtual" sub="Priceless"
                                     detail="
                                     If you know, you know.
-                                    It is not M.Rajoy, it is the virtual M****da. One of roi's specialties. Show how long you can hold out and win fantastic prizes."
+                                    It is not M.Rajoy, it is the virtual M****da. One of the paraíso's specialties. Show how long you can hold out and win fantastic prizes."
                                     moreDetail="Contact with the Paraíso BBQ Staff if you want to buy this product."
                                     image={banana}
                                 />
