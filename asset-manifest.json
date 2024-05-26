@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bbq/static/css/main.0af7a237.css",
-    "main.js": "/bbq/static/js/main.4c106ef9.js",
+    "main.css": "/bbq/static/css/main.18203dac.css",
+    "main.js": "/bbq/static/js/main.4756bb4d.js",
     "static/js/453.d858012f.chunk.js": "/bbq/static/js/453.d858012f.chunk.js",
     "static/media/video-head-bbq.mp4": "/bbq/static/media/video-head-bbq.12076fb93e13ab36af45.mp4",
     "static/media/disco-alex.png": "/bbq/static/media/disco-alex.5f85ff9ead726604ce65.png",
@@ -11,12 +11,12 @@
     "static/media/disco-roi.jpg": "/bbq/static/media/disco-roi.85be985752f588e91e0d.jpg",
     "static/media/ticket.jpg": "/bbq/static/media/ticket.39a4e4d3cbebee3d1360.jpg",
     "index.html": "/bbq/index.html",
-    "main.0af7a237.css.map": "/bbq/static/css/main.0af7a237.css.map",
-    "main.4c106ef9.js.map": "/bbq/static/js/main.4c106ef9.js.map",
+    "main.18203dac.css.map": "/bbq/static/css/main.18203dac.css.map",
+    "main.4756bb4d.js.map": "/bbq/static/js/main.4756bb4d.js.map",
     "453.d858012f.chunk.js.map": "/bbq/static/js/453.d858012f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0af7a237.css",
-    "static/js/main.4c106ef9.js"
+    "static/css/main.18203dac.css",
+    "static/js/main.4756bb4d.js"
   ]
 }
